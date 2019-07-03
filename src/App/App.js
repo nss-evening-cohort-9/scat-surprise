@@ -20,16 +20,14 @@ fbConnection();
 const PublicRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = props => (authed === false
     ? (<Component {...props} />)
-    : (<Redirect to={{ pathName: '/home', state: { from: props.location } }} />)
-  );
+    : (<Redirect to={{ pathname: '/home', state: { from: props.location } }} />));
   return <Route {...rest} render={props => routeChecker(props)} />;
 };
 
 const PrivateRoute = ({ component: Component, authed, ...rest }) => {
   const routeChecker = props => (authed === true
     ? (<Component {...props} />)
-    : (<Redirect to={{ pathName: '/auth', state: { from: props.location } }} />)
-  );
+    : (<Redirect to={{ pathname: '/auth', state: { from: props.location } }} />));
   return <Route {...rest} render={props => routeChecker(props)} />;
 };
 
@@ -59,7 +57,7 @@ class App extends React.Component {
       <div className="App">
         <BrowserRouter>
           <React.Fragment>
-            {/* <MyNavbar authed={authed} /> */}
+            <MyNavbar authed={authed} />
             <div className='container'>
               <div className="row">
                 <Switch>
