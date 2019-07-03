@@ -1,8 +1,8 @@
 import React from 'react';
 
- import './Home.scss';
+import './Home.scss';
 
- class Home extends React.Component {
+class Home extends React.Component {
   render() {
     return (
       <div className="Home">
@@ -12,4 +12,4 @@ import React from 'react';
   }
 }
 
- export default Home;
+export default Home;
