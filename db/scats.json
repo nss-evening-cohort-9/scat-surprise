@@ -1,0 +1,44 @@
+{
+  "scats": {
+    "scat1": {
+      "location" : "NSS",
+      "weight" : "12g",
+      "color" : "brown",
+      "sampleName" : "Toxic Sample #1",
+      "animal": "Michael",
+      "uid": "mep47vcnOyaQ01dEZptr80omt302"
+    },
+    "scat2": {
+      "location" : "HW 65",
+      "weight" : "2g",
+      "color" : "yellow",
+      "sampleName" : "Toxic Sample #23",
+      "animal": "bear",
+      "uid": "mep47vcnOyaQ01dEZptr80omt302"
+    },
+    "scat3": {
+      "location" : "Downtown",
+      "weight" : "55g",
+      "color" : "green",
+      "sampleName" : "OMG WHY?",
+      "animal": "unknown",
+      "uid": "mep47vcnOyaQ01dEZptr80omt302"
+    },
+    "scat4": {
+      "location" : "west nashville sidewalk",
+      "weight" : "5g",
+      "color" : "brown",
+      "sampleName" : "Generic #2",
+      "animal": "dog",
+      "uid": "12345"
+    },
+    "scat5": {
+      "location" : "parking garage",
+      "weight" : "550g",
+      "color" : "green",
+      "sampleName" : "WTF?",
+      "animal": "elephant",
+      "uid": "12345"
+    }
+  }
+}
