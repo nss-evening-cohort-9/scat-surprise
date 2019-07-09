@@ -1,6 +1,11 @@
 import React from 'react';
+import scatShape from '../../helpers/propz/scatShape';
 
 class ScatCard extends React.Component {
+  static propTypes = {
+    scat: scatShape.scatCardShape,
+  }
+
   render() {
     const { scat } = this.props;
     return (
