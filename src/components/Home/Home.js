@@ -4,6 +4,8 @@ import 'firebase/auth';
 
 import scatData from '../../helpers/data/scats';
 
+import ScatCard from '../ScatCard/ScatCard';
+
 import './Home.scss';
 
 class Home extends React.Component {
@@ -20,13 +22,19 @@ class Home extends React.Component {
 
   render() {
     const makeScatCards = this.state.scats.map(scat => (
-      <h2>{scat.sampleName}</h2>
+      <ScatCard
+        key={scat.id}
+        scat={scat}
+      />
     ));
 
     return (
-      <div className="Home">
+      <div className="Home col">
         <h1>Home</h1>
+        <div className="d-flex">
           {makeScatCards}
+        </div>
+
       </div>
     );
   }
